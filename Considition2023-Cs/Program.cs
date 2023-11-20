@@ -66,7 +66,7 @@ if (isHardcore)
     {
         Freestyle9100Count = 1,
         Freestyle3100Count = 0,
-        LocationType = generalData.LocationTypes["grocerystorelarge"].Type,
+        LocationType = generalData.LocationTypes["groceryStoreLarge"].Type,
         Longitude = hotspot.Longitude,
         Latitude = hotspot.Latitude
     });
@@ -112,31 +112,3 @@ GameData prodScore = await api.SumbitAsync(mapName, solution, apikey);
 Console.WriteLine($"GameId: {prodScore.Id}");
 Console.WriteLine($"GameScore: {prodScore.GameScore.Total}");
 Console.ReadLine();
-
-//if (Scoring.SandBoxMaps.Contains(mapName.ToLower()))
-//{
-//    List<string> hardcoreMaps = Scoring.SandBoxMaps;
-//    if (hardcoreMaps.Contains(mapName.ToLower()))
-//    {
-//        var hardcoreValidation = Scoring.SandboxValidation(mapName, solution, mapData);
-//        if (hardcoreValidation is not null)
-//        {
-//            throw new Exception("Hardcore validation failed");
-//        }
-//    }
-//    GameData score = new Scoring().CalculateScore(string.Empty, solution, mapData, generalData);
-//    Console.WriteLine($"GameScore: {score.GameScore.Total}");
-//    GameData prodScore = await api.SumbitAsync(mapName, solution, apikey);
-//    Console.WriteLine($"GameId: {prodScore.Id}");
-//    Console.WriteLine($"GameScore: {prodScore.GameScore}");
-//    Console.ReadLine();
-//}
-//else
-//{
-//    GameData score = new Scoring().CalculateScore(string.Empty, solution, mapData, generalData);
-//    Console.WriteLine($"GameScore: {score.GameScore.Total}");
-//    GameData prodScore = await api.SumbitAsync(mapName, solution, apikey);
-//    Console.WriteLine($"GameId: {prodScore.Id}");
-//    Console.WriteLine($"GameScore: {prodScore.GameScore}");
-//    Console.ReadLine();
-//}
