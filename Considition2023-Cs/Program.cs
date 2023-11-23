@@ -59,8 +59,8 @@ SubmitSolution solution = new()
 
 if (isHardcore)
 {
-    var hotspot = mapData.Hotspots[0];
-    var hotspot2 = mapData.Hotspots[1];
+    var hotspot = mapData.Hotspots[1];
+    var hotspot2 = mapData.Hotspots[2];
 
     solution.Locations.Add("location1", new PlacedLocations()
     {
